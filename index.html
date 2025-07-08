@@ -107,6 +107,77 @@
             box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
         }
         
+        .projects-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .projects-title {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+        }
+        
+        .project-name {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-bottom: 0.8rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .project-description {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+        
+        .project-link {
+            display: inline-block;
+            color: #ffffff;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .project-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+        
         @media (max-width: 768px) {
             .welcome-text {
                 font-size: 2rem;
@@ -116,12 +187,19 @@
                 padding: 2rem 1rem;
                 margin: 1rem;
             }
-            .contact-title {
+            .contact-title, .projects-title {
                 font-size: 1.3rem;
             }
             .email-link {
                 font-size: 1rem;
                 padding: 0.6rem 1rem;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .project-card {
+                padding: 1.2rem;
             }
         }
     </style>
@@ -144,6 +222,29 @@
             <div class="contact-info">
                 <a href="mailto:itstimmeh23@outlook.com" class="email-link">itstimmeh23@outlook.com</a>
                 <a href="mailto:timmehthesloth23@icloud.com" class="email-link">timmehthesloth23@icloud.com</a>
+            </div>
+        </div>
+        
+        <div class="projects-section">
+            <h2 class="projects-title">my python project</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-name">Project Name 1</h3>
+                    <p class="project-description">crashes your device</p>
+                    <a href="https://github.com/timmehdaslothlol/fun-python-script-by-timmeh" class="project-link" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-name"doesnt exist</h3>
+                    <p class="project-description">Description of your second project goes here. What technologies did you use?</p>
+                    <a href="https://github.com/yourusername/project2" class="project-link" target="_blank">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-name">also doesnt exist</h3>
+                    <p class="project-description">Description of your third project goes here. What problem does it solve?</p>
+                    <a href="https://github.com/yourusername/project3" class="project-link" target="_blank">View on GitHub</a>
+                </div>
             </div>
         </div>
     </div>
