@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimmehTheSloth's Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .welcome-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .welcome-text {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+            margin: 0;
+            animation: glow 2s infinite alternate;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            to {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.8);
+            }
+        }
+        
+        .sloth-emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+            animation: sway 3s ease-in-out infinite;
+        }
+        
+        @keyframes sway {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+        
+        .contact-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .contact-title {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        
+        .email-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+        
+        .email-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .welcome-text {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+            .welcome-container {
+                padding: 2rem 1rem;
+                margin: 1rem;
+            }
+            .contact-title {
+                font-size: 1.3rem;
+            }
+            .email-link {
+                font-size: 1rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background audio from OneDrive -->
+    <iframe src="https://1drv.ms/u/c/0eea5bef07eb66e3/IQSiEnUD8ceYSYtInn1LHbgyAdlIgGLdlzkjRhgxJqlJHOg" 
+            width="98" 
+            height="120" 
+            frameborder="0" 
+            scrolling="no"
+            style="position: absolute; top: 20px; right: 20px; z-index: 1000; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+    </iframe>
+    <div class="welcome-container">
+        <span class="sloth-emoji">🦥</span>
+        <h1 class="welcome-text">WELCOME TO TIMMEHTHESLOTH'S WEBSITE</h1>
+        
+        <div class="contact-section">
+            <h2 class="contact-title">Contact Timmeh</h2>
+            <div class="contact-info">
+                <a href="mailto:itstimmeh23@outlook.com" class="email-link">itstimmeh23@outlook.com</a>
+                <a href="mailto:timmehthesloth23@icloud.com" class="email-link">timmehthesloth23@icloud.com</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
